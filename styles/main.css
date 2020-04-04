@@ -24,8 +24,8 @@
 	color: white; /* set text color to white */
 	font-weight: bold; /* set the text to bold */
 }
-a.current{
-	color: yellow;
+#nav_menu ul li a.current{
+	 color: yellow;
 }
 /* ========== body Selector ==========*/
 /* the styles for the elements */
