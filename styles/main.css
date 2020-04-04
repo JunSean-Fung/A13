@@ -6,7 +6,27 @@
 	margin: 0;
 	padding: 0;
 }
-
+#nav_menu ul{
+	list-style-type: none; /* removes the bullet point */
+	padding: 0 0;
+	margin: 0 0;
+}
+#nav_menu ul li{
+	float: left; /* set it horizontal */
+}
+#nav_menu ul li a{
+	display: block;
+	width: 160px; /* 800/5 = 160 */
+	text-align: center;
+	padding: 1em 0em;
+	background-color: #800000;
+	text-decoration: none; /* Removes the underline */
+	color: white; /* set text color to white */
+	font-weight: bold; /* set the text to bold */
+}
+a.current{
+	color: yellow;
+}
 /* ========== body Selector ==========*/
 /* the styles for the elements */
 body {
@@ -138,6 +158,7 @@ a:hover {
 .shadow {
 	text-shadow: 2px 2px #800000;
 }
+
 /* the styles for the footer */
 footer p {
 	text-align: center; /* align the text to center */
