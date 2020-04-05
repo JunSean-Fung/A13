@@ -41,9 +41,6 @@
 	clear: both; /* clear the content so it does not float */
 	display: block; /* display the content  as a block element */
 }
-#nav_menu ul li a.current{
-	color: yellow;
-}
 /* ========== body Selector ==========*/
 /* the styles for the elements */
 body {
