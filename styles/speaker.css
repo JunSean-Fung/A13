@@ -6,7 +6,44 @@
 	margin: 0;
 	padding: 0;
 }
-
+#nav_menu ul{
+	list-style-type: none; /* removes the bullet point */
+	padding: 0 0;
+	margin: 0 0;
+	position: relative;
+}
+#nav_menu ul li{
+	float: left; /* set it horizontal */
+}
+#nav_menu ul li a{
+	display: block;
+	width: 160px; /* 800/5 = 160 */
+	text-align: center;
+	padding: 1em 0em;
+	background-color: #800000;
+	text-decoration: none; /* Removes the underline */
+	color: white; /* set text color to white */
+	font-weight: bold; /* set the text to bold */
+}
+/* unordered list within unordered list */
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+/* When hover over the main nav */
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+/* pseudo element, This make it so the "about us" does not get replaced by "Our history" */
+#nav_menu > ul::after {
+	content: " "; /* add empty space following the navigation menu */
+	clear: both; /* clear the content so it does not float */
+	display: block; /* display the content  as a block element */
+}
+#nav_menu ul li a.current{
+	color: yellow;
+}
 /* ========== body Selector ==========*/
 /* the styles for the elements */
 body {

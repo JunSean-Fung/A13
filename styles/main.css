@@ -35,11 +35,11 @@
 #nav_menu ul li:hover > ul {
 	display: block;
 }
-/* so that "about us" does not get replaced by "Our history" */
+/* pseudo element, This make it so the "about us" does not get replaced by "Our history" */
 #nav_menu > ul::after {
-	content: " ";
-	clear: both;
-	display: block;
+	content: " "; /* add empty space following the navigation menu */
+	clear: both; /* clear the content so it does not float */
+	display: block; /* display the content  as a block element */
 }
 #nav_menu ul li a.current{
 	 color: yellow;
@@ -105,10 +105,12 @@ section p {
 /* selector for unordered list */
 section ul {
 	padding: 0em 0em 0.25em 1.25em;
+	list-style-type: circle; /* change the bullet in the unordered list to circle */
 }
 /* selector for each list */
 section li {
 	padding-bottom: 0.35em; /* set bottom padding */
+
 }
 section blockquote {
 	font-style: italic; /* italizied the font within the blockquote tag */
